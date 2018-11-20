@@ -4,15 +4,19 @@
     {% if site.data.theme.social.gravatar %}
     <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
     {% else %}
-    <img src="/logo.png" id="logo" alt="Blog logo"/>
+    <img src="/lagoma1/logo.png" id="logo" alt="Blog logo"/>
     {% endif %}
   </a>
-  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <h2>I'm {{ site.data.theme.name }}.</h2>
   <div id="bio">
-    <p>A brief bio or something witty.</p>
-    <p>
-      Edit me in <code>_includes/sidebar.html</code>
-    </p>
+    <p>IN602 Software Engineering Portfolio</p>
+    <p>Navigation:</p>
+    <ul>
+      <li><a href="/lagoma1/" class="btn">Home</a></li>
+    <li><a href="/lagoma1/professional" class="btn">Professional Proficiency</a></li>
+    <li><a href="/lagoma1/technical" class="btn">Technical Proficiency</a></li>
+    <li><a href="/lagoma1/img/CV.pdf" class="btn">CV/Resume</a></li>
+    </ul>
   </div>
   <div id="social">
     {% include social.html %}
