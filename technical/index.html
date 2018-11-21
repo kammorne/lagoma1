@@ -6,4 +6,66 @@ title: Software Engineering Portfolio
 	<h1>Technical Proficiency</h1>
 </div><!-- /.blurb -->
 <div class="container">
+	<h2>Learning new Technologies</h2>
+	<p>At the beginning of the project, I was slightly disappointed in what we were assigned to do, only because it was using base HTML, CSS and Javascript, which I have had experience in
+	the past on during the first year of the degree. However, I figured, instead of sulking about having to use HTML for our project, I would use it as an excuse to hone in my Javascript
+	skills, since I still hadn't done much of it in the first year. Learning Javascript for the project turned out to be slightly more difficult than I was expecting, but after researching
+	how to accomplish the user-stories I had been assigned with, I was beginning to understand how Javascript works compared to other programming languages, and I soon had the user-stories
+	completed and implemented into the project.</p>
+	
+	<p>Later on into the semester, we were tasked on learning the Laravel Framework, which is what we would be using for the project from now on. Our first task for learning the framework was
+	to create an Edit Semesters page, which both Nick and I worked on. Personally, I went away and worked through the tutorial that the lecturers had provided on how to use Laravel and create
+	a basic To-Do list. When Laravel was introduced, I found the framework extremely difficult to understand and it was a step in a completely different direction to what we had been doing previously.
+	After working through the tutorial however, I did find that the framework started to make sense, and soon I had a small understanding on how the framework worked.</p>
+	
+	<p>An issue I came across later into the project, after we had ported the software to the Laravel Framework, was passing information from a PHP DateTime element into our Javascript functions. I spent
+	ages looking at different techniques on how to achieve this, but most of the recommended fixes online said to use AJAX, which is a set of Web Development Techniques, in order to achieve what I was after.
+	As I didn't have experience with AJAX, nor knowing if Laravel would even support it, I decided to try different techniques on getting the PHP DateTime into Javascript. In the end, I found that spliting the
+	DateTime element into different variables for day, month and year, and then passing it to the Javascript function, worked out. So I ended up using that for the user-story I was assigned.</p>
+	
+	<h2>Implementing Program Design</h2>
+	<p>During the very first sprint, I had discovered a handy way on creating a simple collapsing box which would contain information regarding Course Information. We ended up keeping this design for both the page
+	I had created, as well as the FAQ page, throughout the entire development for the software. I did change it during either Sprint 2 or Sprint 3 due to a clients request to have the boxes be in 2 seperate columns,
+	but other than that, the design stayed the same throughout development.</p>
+	
+	<p>During the conversion to Laravel phase of the project, the Implementation of the Edit Semesters page design ended up being one of the designs that was used for 2 or 3 other sections on the project.
+	Looking back on the project, the project would have been completely different, had we not implemented the Edit Semesters page in the way we did, our project would have taken a completely different
+	direction, and I feel like we wouldn't have gotten as far as we did, had it not been for implementing the Edit Semesters page.</p>
+	
+	<p>When discussing Sprint 5 with the group, I noticed that some of the elements in our original HTML application were missing when we ported the software to the Laravel Framework, and so I took on the task of
+	figuring out why these elements had disappeared. 
+	
+	<h2>Deploying/Installing Dependencies/Other Technologies Into the Project</h2>
+	<p>I feel like for this project, deploying the software onto the Laravel framework really pushed it to the standard that is on-par with software within the corporate world. If we had left the software
+	running on HTML through Github pages, the software would have felt more like just a website, rather than an actual peice of usable technology. Using the Laravel framework, as well as hosting the software
+	through MariaDB, made the software feel more like an application, rather than a website.</p>
+	
+	<p>Using Composer for the database aspects of the software also helped make the software feel more like an application, by Allowing us to learn how the Laravel Framework created, updated,
+	and deleted items from the database, as well as having database seeders working through the Laravel migrations. Without us learning and using Composer like we did, I feel like our application would
+	have not been to the standard that it is now.</p>
+	
+	<h2>Providing Systems Administration Services</h2>
+	<p>Unfortunately, I personally did not have any experience working with the Administration Services that we had implemented into the software, as Joe had those user-stories assigned to him. I did however
+	look through how he had done it, and found out that the Laravel Framework provides a simple yet in-depth Authentication system, which Joe had worked with to have different types of users, both Admins and Students.
+	With these Administration Services, only users logged into an admin account could do any modifications to the database, such as adding Semesters or Courses. A user logged in as a student could only view the currently
+	entered Semesters, Courses and Assignments, making the software usable by both Students and Lecturers without any issues happening with information being spoofed.</p>
+	
+	<h2>Configuring Hardware for the Project</h2>
+	<p>For the project, we didn't really configure any hardware for the software we had created. Github pages was already configured to contain our HTML software, and further on through the development when we moved to the
+	Laravel Project, the MariaDB server was also mostly configured for the software. The small amount of configuration we did have to do was done through the SSH, which consisted of adjusting the .env file for the MariaDB
+	server, and changing some of the permissions on the server to allow the MariaDB server to edit the log files for the software.</p>
+
+	
+	<h2>Advanced Use of Version Control</h2>
+	<p>Early into the project's creation, I had a few issues regarding Github's version control, where the master branch was apparently newer than my branch, yet at the same time my branch was newer than the master. I ended up
+	deleting the files I had worked on, recloning the repository into my work folder, and then readding the information I had worked on. In class the next week however, Elise had told me about the git reset --hard command, which
+	helped a lot with issues I encountered later on with my branch having the same issue.</p>
+	
+	<p>In the earlier stages of the project, we kept having issues with our versions, where some of our work would get uploaded, stay there for a while, and then get reverted again. At first we thought it may have been a bug with
+	Github, however when we investigated it further on by looking through the previous commits done by all users, we found out that a team member had accidentally been typing git add * instead of adding the exact files they had been
+	working on. After having a chat, we managed to overcome the problem we had been having with the versions.</p>
+	
+	<p>Throughout the Semester, We kept version control under control by keeping everything in our own branches, and only pushing to the master branch once we were sure that we had completed our user-story. Earlier in the semester, we
+	accidentally made branches named under our actual name instead of the name of the feature, but after that Sprint, we had adjusted our workflow so that our branches were named after the feature they contained, rather than the person
+	who was working on them. When we were done with our branch, we would create a pull-request, and contact someone on Facebook about getting them to review it, and then merge it to the master branch, if there weren't any conflicts</p>
 </div>
